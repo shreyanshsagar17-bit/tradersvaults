@@ -3,3 +3,4 @@
 +import { Trade } from '../types';
 +
  export const authService = {
+ }
