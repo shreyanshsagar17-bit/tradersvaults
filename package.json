@@ -1,0 +1,28 @@
+{
+  "name": "fullstack-monorepo",
+  "version": "1.0.0",
+  "description": "Full-stack project with React + Vite frontend and Node.js + Express backend",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace frontend",
+    "server": "npm run dev --workspace backend",
+    "start": "concurrently \"npm run dev --workspace frontend\" \"npm run dev --workspace backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "react",
+    "vite",
+    "nodejs",
+    "express",
+    "fullstack",
+    "monorepo"
+  ],
+  "author": "",
+  "license": "MIT"
+}
